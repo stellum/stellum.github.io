@@ -157,7 +157,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://stellum.github.io/2022/04/19/2022-04-19/">
+    <link itemprop="mainEntityOfPage" href="https://stellum.github.io/2022/04/20/2022-04-20/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -171,7 +171,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/04/19/2022-04-19/" class="post-title-link" itemprop="url">220419-TIL</a>
+            <a href="/2022/04/20/2022-04-20/" class="post-title-link" itemprop="url">220420-TIL - BFC, Float, Display 속성</a>
         </h2>
 
         <div class="post-meta">
@@ -182,7 +182,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-19 19:51:50 / Modified: 21:06:17" itemprop="dateCreated datePublished" datetime="2022-04-19T19:51:50+09:00">2022-04-19</time>
+              <time title="Created: 2022-04-20 23:50:50 / Modified: 23:49:44" itemprop="dateCreated datePublished" datetime="2022-04-20T23:50:50+09:00">2022-04-20</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -205,43 +205,129 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul>
-<li>Definition and usage of <code>innerHTML</code> , <code>querySelector</code> , <code>addEventListener</code><ul>
-<li><p>The <code>innerHTML</code> property sets or returns the HTML content (innerHTML) of an element.</p>
+          <ul>
+<li><p>오늘은 CSS display 2가지 속성 상태에 대해 배웠다. </p>
+<p>display 속성은 아래와 같이 block 과 inline 으로 나눠진다고 한다.  </p>
+<ol>
+<li>block level</li>
+<li>inline level</li>
+</ol>
+</li>
+</ul>
+<p>이 둘의 차이점은?<br>block 은 한칸을 다 차지하고, 가로로 한칸에 꽉 차면서 각 각 위에서 아래로 차곡차곡 쌓이는 성질을 가지고 있다.</p>
+<p>inline 블록은 위아래 방향으로 밀고, 좌측에서 우측 또는 그 반대로 흐르는 성질을 가지고 있다.</p>
 <ul>
-<li>아래의 경우, <code>&lt;div&gt;Hello!&lt;/div&gt;</code> 의 값을 버튼을 클릭함과 동시에 <code>&lt;h1&gt;제목입니다.&lt;/h1&gt;</code> 로 업데이트 해줌.</li>
+<li><p>CSS BFC (Block Formateed Context) 에 대해서도 배웠다.<br>블럭 박스의 재계산이 일어나는 것.</p>
+<p>BFC 생성 조건:</p>
+<p>BFC 가 생성되기 위해서 다음과 같은 조건 중 하나를 만족해야 한다!</p>
+</li>
+<li><p>float가 none이 아니면서 clear 되지 않은 경우</p>
+</li>
+<li><p>position이 absolute &#x2F; fixed</p>
+</li>
+<li><p>display가 inline-block &#x2F; tabel-cell &#x2F; tabel-caption</p>
+</li>
+<li><p>overflow가 visible 이 아니다</p>
+</li>
+<li><p>display가 flex &#x2F; inline-flex</p>
+</li>
 </ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://stellum.github.io/2022/04/19/2022-04-19/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stellum">
+      <meta itemprop="description" content="All about programming studies including git, html, css, javascript, react, node.js, python, and more.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="스텔라의 개발일지">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/19/2022-04-19/" class="post-title-link" itemprop="url">220419-TIL - innerHTML, querySelector, addEventListener</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-04-19 19:51:50" itemprop="dateCreated datePublished" datetime="2022-04-19T19:51:50+09:00">2022-04-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-04-20 23:34:35" itemprop="dateModified" datetime="2022-04-20T23:34:35+09:00">2022-04-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TIL-Today-I-Learned/" itemprop="url" rel="index"><span itemprop="name">TIL (Today I Learned)</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><p><code>innerHTML</code> , <code>querySelector</code> , <code>addEventListener</code> 의 정의와 사용법에 대해서 배웠다.</p>
 </li>
-<li><p><code>Document.querySelector()</code> returns the first <code>Element</code> within the document that matches the specified selector, or group of selectors.</p>
+<li><p><code>innerHTML</code> 속성은 HTML content (innerHTML) of an element 의 값으로 리턴해준다.<br>  아래의 경우, <code>&lt;div&gt;Hello!&lt;/div&gt;</code> 의 값을 버튼을 클릭함과 동시에 <code>&lt;h1&gt;제목입니다.&lt;/h1&gt;</code> 로 업데이트 해준다.</p>
 </li>
-<li><p><code>querySelector</code> 사용할때는 css-selector 로 2가지 태그 선택이 가능!</p>
+<li><p>JS 를 사용하다 보면 html의 클래스 이름 및 태그를 갖고 오기 위해서 querySelector 을 많이 사용한다고 한다.</p>
+</li>
+</ul>
+<p>기본형태:<br><code>element = baseElement.querySelector(selectors);</code></p>
+<p>리턴되는 값은 인자를 받아 일치하는 baseElement의 자손의 엘리먼트를 갖고 온다.</p>
+<p><code>querySelector</code> 사용할때는 css-selector 로 2가지 태그 선택이 가능!<br>    - <code>.</code> 클래스를 선택<br>    - <code>#</code> 아이디를 선택</p>
+<p>아래의 경우, first element 인 <code>&lt;div&gt;Hello!&lt;/div&gt;</code> 를 선택</p>
 <ul>
-<li><code>.</code> 클래스를 선택</li>
-<li><code>#</code> 아이디를 선택</li>
-<li>아래의 경우, first element 인 <code>&lt;div&gt;Hello!&lt;/div&gt;</code> 를 선택</li>
+<li><code>EventTarget.addEventListener()</code> 는 이벤트를 등록하는 가장 권장되는 방식이다. 이 방식을 이용하면 여러개의 이벤트 핸들러를 등록할 수 있다고 한다.</li>
 </ul>
-</li>
-<li><p><code>EventTarget.addEventListener()</code> interface sets up a function that will be called whenever the specified event is delivered to the target.</p>
-<ul>
-<li>아래의 경우, <code>button</code> 이라는 <code>EventTarget</code> 을 콜함</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>아래의 경우, <code>button</code> 이라는 <code>EventTarget</code> 을 콜한다.</p>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Hello!<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">button</span>&gt;</span>바꾸기<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"> </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">const</span> target = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;div&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">const</span> button = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;button&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">		button.<span class="title function_">addEventListener</span>(<span class="string">&#x27;click&#x27;</span>, 제목바꾸기);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">		<span class="keyword">function</span> 제목바꾸기() &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">			target.<span class="property">innerHTML</span> = <span class="string">&#x27;&lt;h1&gt;제목입니다.&lt;/h1&gt;&#x27;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
 
+
 <ul>
-<li>Javascript <code>onclick</code> <code>function</code> 으로 버튼 열었다 닫았다 하는 기능 만들기</li>
+<li>Javascript <code>onclick</code> function 으로 버튼 열었다 닫았다 하는 기능을 만들었다.</li>
 </ul>
 <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">&quot;alertBox&quot;</span>&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>알림창임!</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">onclick</span>=<span class="string">&quot;모달창닫아줘()&quot;</span>&gt;</span>이거 누르면 꺼짐<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">&quot;show-alert&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;모달창열어줘()&quot;</span>&gt;</span> 알림창을 보여줘! <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">function</span> 모달창열어줘() &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">		<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;alertBox&#x27;</span>).<span class="property">style</span>.<span class="property">display</span> = <span class="string">&#x27;block&#x27;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">function</span> 모달창닫아줘() &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">		<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;alertBox&#x27;</span>).<span class="property">style</span>.<span class="property">display</span> = <span class="string">&#x27;none&#x27;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul>
-<li>HTML, CSS 속성 및 사용법</li>
-<li>cowork with gitflow 복습 끝내기</li>
-<li>javascript function 복습</li>
-<li>blog 테마에 category 만드는법 알아보기</li>
-</ul>
 
       
     </div>
@@ -275,7 +361,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/04/18/2022-04-18/" class="post-title-link" itemprop="url">220418 TIL</a>
+            <a href="/2022/04/18/2022-04-18/" class="post-title-link" itemprop="url">220418_TIL - HTML Outline 속성</a>
         </h2>
 
         <div class="post-meta">
@@ -292,7 +378,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-19 21:05:50" itemprop="dateModified" datetime="2022-04-19T21:05:50+09:00">2022-04-19</time>
+                <time title="Modified: 2022-04-20 23:07:19" itemprop="dateModified" datetime="2022-04-20T23:07:19+09:00">2022-04-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -315,20 +401,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul>
-<li>Successfully updated Hexo blog theme</li>
-<li>Learned the outline concept in html and its usages of <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags</li>
-<li>html and css elements and attributes, input types</li>
-<li>Practiced Markdown</li>
+          <ul>
+<li><p>블로그 내에 드디어 카테고리와 태그를 만들었다! 여러 에러 끝에 결국 테마를 바꿔야 했지만… </p>
+</li>
+<li><p>HTML 요소의 가장 바깥 부분을 둘러싸고 있는 Outline 부분의 스타일 속성에 대해서 배웠다.<br>이 속성은 border 속성과는 달리 html 요소의 전체 크기에는 포함되지 않아 width, height 들은 아웃라인의 두께에 전혀 영향을 받지 않는다. </p>
+</li>
+<li><p><code>&lt;h1&gt;, &lt;h6&gt;</code> 태그의 실제 사용 용도와 우선순위에 대해서 배웠다.</p>
+</li>
 </ul>
-<h2 id="오늘-느낀-점"><a href="#오늘-느낀-점" class="headerlink" title="오늘 느낀 점"></a>오늘 느낀 점</h2><ul>
-<li>Create categories in the navigation bar on my blog</li>
-<li>Practice html outline referencing other websites to have better webpage structure</li>
-</ul>
-<h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul>
-<li>javascript lecture</li>
-<li>review html and css</li>
-</ul>
+<p>웹사이트를 처음 만들때 웹페이지의 어떤 특정 부분이 검색엔진에 잘 노출될지 그 중요도를 고려해 가장 중요한 <code>&lt;h1&gt;</code> 태그 순으로 <code>&lt;h4&gt;</code> 까지 보통 사용한다고 한다. </p>
+<p>이러한 태그 요소들이 html 아웃라인과 연관이 있고 이러한 관점에서 보기 위해 다른 웹사이트들의 구조를 잘 참고해서 안목을 길러봐야 겠다. </p>
 
       
     </div>
@@ -362,7 +444,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/04/17/2022-04-17/" class="post-title-link" itemprop="url">220417-TIL</a>
+            <a href="/2022/04/17/2022-04-17/" class="post-title-link" itemprop="url">220417_TIL - Shell Command</a>
         </h2>
 
         <div class="post-meta">
@@ -379,7 +461,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-20 11:12:24" itemprop="dateModified" datetime="2022-04-20T11:12:24+09:00">2022-04-20</time>
+                <time title="Modified: 2022-04-20 23:07:26" itemprop="dateModified" datetime="2022-04-20T23:07:26+09:00">2022-04-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -402,94 +484,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul>
-<li>Learned how to install Git using Terminal.</li>
-<li>Created github blog using Hexo and published the first github post.</li>
-<li>Learned about Kernel and Shell.</li>
-<li>Learned how to collaborate and manage github projects on a team using the Issues feature.</li>
-<li>Understanding the use of Git, repository concept, branch model, and git flow.</li>
-<li>Practiced CLI Shell command and Vim editor on Terminal.</li>
+          <ul>
+<li><p>터미널에서 Git 을 설치해 hexo 라는 블로그 테마를 다운받아서 첫 깃헙 블로그를 만들었다.<br>이전에는 깃 사용하는게 전혀 이해가 안됬었는데 오늘부로 깃의 원리를 제대로 이해했다.</p>
+</li>
+<li><p>커널과 쉘의 의미와 그 둘의 차이점에 대해 배웠다.<br>그리고 깃의 저장소, 깃을 왜 사용해야하는지, 브랜치의 개념, 깃 플로우에 대해서도 배울 수 있었다.</p>
+</li>
+<li><p>깃헙에서 실제 기업에서 어떻게 팀이 협업하는지 전체적인 workflow 에 대해 배웠다.</p>
+<p>주니어 개발자들은 포크해서 (master 가 아닌) develop 이라는 브랜치 내에서 작업해서 깃에 push 해 올리고,<br>Issues 라는 곳에다 각자의 comment 를 남기고 결국엔 프로젝트 리더가 merge 하는 식!</p>
+</li>
+<li><p>CLI 라는 개념과 Vim editor 에 대해서도 배웠다.<br>iTerm 에서 shell command 플로우가 처음에 익숙하지 않아서 계속 연습했더니 이제 조금 편하게 사용할 수 있게 되었다!</p>
+</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git <span class="built_in">clone</span> &#123;repo url&#125;</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> &#123;repo&#125;</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git add README.md</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git commit</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git push origin main</span></span><br></pre></td></tr></table></figure>
 
-
-<h2 id="오늘-느낀-것"><a href="#오늘-느낀-것" class="headerlink" title="오늘 느낀 것"></a>오늘 느낀 것</h2><ul>
-<li><code>$ git add .</code> 을 하면 탕비실에 갈 우려가 있음.</li>
-<li><code>$ git commit -m “message”</code> 를 하면 오타났을때 고치기 힘들고 override 할 가능성이 있음.</li>
-</ul>
-<h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul>
-<li>Understanding different types of branch - local branch, remote branch, and all branch.</li>
-<li>Understanding git flow strategy - Master, Hotfix, Develop (junior developer would usually work on this branch in a company), Feature.</li>
-<li>Practice git flow workflow.</li>
-<li>Learn about Rename, Unstaging, Reset, Revert.</li>
-<li>Learn about Fork and Merge process.</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://stellum.github.io/2022/04/14/my-new-post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="stellum">
-      <meta itemprop="description" content="All about programming studies including git, html, css, javascript, react, node.js, python, and more.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="스텔라의 개발일지">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/14/my-new-post/" class="post-title-link" itemprop="url">my new post</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-04-14 10:41:54" itemprop="dateCreated datePublished" datetime="2022-04-14T10:41:54+09:00">2022-04-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-19 20:43:48" itemprop="dateModified" datetime="2022-04-19T20:43:48+09:00">2022-04-19</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>This is my first brand new post with hexo. </p>
-<p>I’m very excited!!</p>
+<p>git 사용시 주의해야 할 명령어들:<br><code>$ git add .</code><br><code>$ git commit -m “message”</code> 를 하면 오타났을때 고치기 힘들고 override 할 가능성이 있음.</p>
 
       
     </div>
@@ -584,7 +592,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
