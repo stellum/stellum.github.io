@@ -20,30 +20,37 @@
     var CONFIG = {"hostname":"stellum.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="All about programming studies including git, html, css, javascript, react, node.js, python, and more.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="스텔라의 개발일지">
-<meta property="og:url" content="https://stellum.github.io/index.html">
+  <meta name="description" content="01. CSS 기본 문법 선택자 {속성: 값; 속성:값;}  선택자: 스타일을 적용할 대상 div &amp;#123;color: red; margin: 20px;&amp;#125; margin: 요소 외부 여백   속성: 종류 (property) 값: (value)  : 은 ; 이다. 주석처리:  cmd + &#x2F; Indent tab Outdent shift + tab 02">
+<meta property="og:type" content="article">
+<meta property="og:title" content="220421-TIL - CSS Display, Position (Absolute, Relative, Static), Stack Order">
+<meta property="og:url" content="https://stellum.github.io/2022/04/21/2022-04-21/index.html">
 <meta property="og:site_name" content="스텔라의 개발일지">
-<meta property="og:description" content="All about programming studies including git, html, css, javascript, react, node.js, python, and more.">
+<meta property="og:description" content="01. CSS 기본 문법 선택자 {속성: 값; 속성:값;}  선택자: 스타일을 적용할 대상 div &amp;#123;color: red; margin: 20px;&amp;#125; margin: 요소 외부 여백   속성: 종류 (property) 값: (value)  : 은 ; 이다. 주석처리:  cmd + &#x2F; Indent tab Outdent shift + tab 02">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-21T13:50:50.000Z">
+<meta property="article:modified_time" content="2022-04-21T13:24:32.289Z">
 <meta property="article:author" content="stellum">
+<meta property="article:tag" content="TIL">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://stellum.github.io/">
+<link rel="canonical" href="https://stellum.github.io/2022/04/21/2022-04-21/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>스텔라의 개발일지</title>
+  <title>220421-TIL - CSS Display, Position (Absolute, Relative, Static), Stack Order | 스텔라의 개발일지</title>
   
 
 
@@ -151,9 +158,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -169,10 +177,9 @@
       <meta itemprop="name" content="스텔라의 개발일지">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/21/2022-04-21/" class="post-title-link" itemprop="url">220421-TIL - CSS Display, Position (Absolute, Relative, Static), Stack Order</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          220421-TIL - CSS Display, Position (Absolute, Relative, Static), Stack Order
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -205,7 +212,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="01-CSS-기본-문법"><a href="#01-CSS-기본-문법" class="headerlink" title="01. CSS 기본 문법"></a>01. CSS 기본 문법</h3><p> 선택자 {속성: 값; 속성:값;}</p>
+        <h3 id="01-CSS-기본-문법"><a href="#01-CSS-기본-문법" class="headerlink" title="01. CSS 기본 문법"></a>01. CSS 기본 문법</h3><p> 선택자 {속성: 값; 속성:값;}</p>
 <ul>
 <li>선택자: 스타일을 적용할 대상 <code>div &#123;color: red; margin: 20px;&#125;</code><ul>
 <li>margin: 요소 외부 여백</li>
@@ -461,381 +468,37 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: royalblue;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">4px</span> dashed red;</span><br><span class="line">  <span class="attribute">background-color</span>: orange;</span><br><span class="line">&#125;</span><br><span class="line">**<span class="selector-class">.container</span> <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">&#125;**</span><br><span class="line">**<span class="selector-class">.container</span> <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;**</span><br><span class="line">**<span class="selector-class">.container</span> <span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">&#125;**</span><br></pre></td></tr></table></figure>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/TIL/" rel="tag"># TIL</a>
+              <a href="/tags/Git/" rel="tag"># Git</a>
+              <a href="/tags/HTML/" rel="tag"># HTML</a>
+              <a href="/tags/CSS/" rel="tag"># CSS</a>
+              <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://stellum.github.io/2022/04/20/2022-04-20/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="stellum">
-      <meta itemprop="description" content="All about programming studies including git, html, css, javascript, react, node.js, python, and more.">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="스텔라의 개발일지">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/20/2022-04-20/" class="post-title-link" itemprop="url">220420-TIL - BFC, Float, Display 속성</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-04-20 23:50:50 / Modified: 23:49:44" itemprop="dateCreated datePublished" datetime="2022-04-20T23:50:50+09:00">2022-04-20</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/TIL-Today-I-Learned/" itemprop="url" rel="index"><span itemprop="name">TIL (Today I Learned)</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li><p>오늘은 CSS display 2가지 속성 상태에 대해 배웠다. </p>
-<p>display 속성은 아래와 같이 block 과 inline 으로 나눠진다고 한다.  </p>
-<ol>
-<li>block level</li>
-<li>inline level</li>
-</ol>
-</li>
-</ul>
-<p>이 둘의 차이점은?<br>block 은 한칸을 다 차지하고, 가로로 한칸에 꽉 차면서 각 각 위에서 아래로 차곡차곡 쌓이는 성질을 가지고 있다.</p>
-<p>inline 블록은 위아래 방향으로 밀고, 좌측에서 우측 또는 그 반대로 흐르는 성질을 가지고 있다.</p>
-<ul>
-<li><p>CSS BFC (Block Formateed Context) 에 대해서도 배웠다.<br>블럭 박스의 재계산이 일어나는 것.</p>
-<p>BFC 생성 조건:</p>
-<p>BFC 가 생성되기 위해서 다음과 같은 조건 중 하나를 만족해야 한다!</p>
-</li>
-<li><p>float가 none이 아니면서 clear 되지 않은 경우</p>
-</li>
-<li><p>position이 absolute &#x2F; fixed</p>
-</li>
-<li><p>display가 inline-block &#x2F; tabel-cell &#x2F; tabel-caption</p>
-</li>
-<li><p>overflow가 visible 이 아니다</p>
-</li>
-<li><p>display가 flex &#x2F; inline-flex</p>
-</li>
-</ul>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/04/20/2022-04-20/" rel="prev" title="220420-TIL - BFC, Float, Display 속성">
+      <i class="fa fa-chevron-left"></i> 220420-TIL - BFC, Float, Display 속성
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://stellum.github.io/2022/04/19/2022-04-19/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="stellum">
-      <meta itemprop="description" content="All about programming studies including git, html, css, javascript, react, node.js, python, and more.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="스텔라의 개발일지">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/19/2022-04-19/" class="post-title-link" itemprop="url">220419-TIL - innerHTML, querySelector, addEventListener</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-04-19 19:51:50" itemprop="dateCreated datePublished" datetime="2022-04-19T19:51:50+09:00">2022-04-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-20 23:34:35" itemprop="dateModified" datetime="2022-04-20T23:34:35+09:00">2022-04-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/TIL-Today-I-Learned/" itemprop="url" rel="index"><span itemprop="name">TIL (Today I Learned)</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li><p><code>innerHTML</code> , <code>querySelector</code> , <code>addEventListener</code> 의 정의와 사용법에 대해서 배웠다.</p>
-</li>
-<li><p><code>innerHTML</code> 속성은 HTML content (innerHTML) of an element 의 값으로 리턴해준다.<br>  아래의 경우, <code>&lt;div&gt;Hello!&lt;/div&gt;</code> 의 값을 버튼을 클릭함과 동시에 <code>&lt;h1&gt;제목입니다.&lt;/h1&gt;</code> 로 업데이트 해준다.</p>
-</li>
-<li><p>JS 를 사용하다 보면 html의 클래스 이름 및 태그를 갖고 오기 위해서 querySelector 을 많이 사용한다고 한다.</p>
-</li>
-</ul>
-<p>기본형태:<br><code>element = baseElement.querySelector(selectors);</code></p>
-<p>리턴되는 값은 인자를 받아 일치하는 baseElement의 자손의 엘리먼트를 갖고 온다.</p>
-<p><code>querySelector</code> 사용할때는 css-selector 로 2가지 태그 선택이 가능!<br>    - <code>.</code> 클래스를 선택<br>    - <code>#</code> 아이디를 선택</p>
-<p>아래의 경우, first element 인 <code>&lt;div&gt;Hello!&lt;/div&gt;</code> 를 선택</p>
-<ul>
-<li><code>EventTarget.addEventListener()</code> 는 이벤트를 등록하는 가장 권장되는 방식이다. 이 방식을 이용하면 여러개의 이벤트 핸들러를 등록할 수 있다고 한다.</li>
-</ul>
-<p>아래의 경우, <code>button</code> 이라는 <code>EventTarget</code> 을 콜한다.</p>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Hello!<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">button</span>&gt;</span>바꾸기<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"> </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">const</span> target = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;div&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">const</span> button = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;button&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">		button.<span class="title function_">addEventListener</span>(<span class="string">&#x27;click&#x27;</span>, 제목바꾸기);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">		<span class="keyword">function</span> 제목바꾸기() &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">			target.<span class="property">innerHTML</span> = <span class="string">&#x27;&lt;h1&gt;제목입니다.&lt;/h1&gt;&#x27;</span>;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-
-
-<ul>
-<li>Javascript <code>onclick</code> function 으로 버튼 열었다 닫았다 하는 기능을 만들었다.</li>
-</ul>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">&quot;alertBox&quot;</span>&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>알림창임!</span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">onclick</span>=<span class="string">&quot;모달창닫아줘()&quot;</span>&gt;</span>이거 누르면 꺼짐<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">&quot;show-alert&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;모달창열어줘()&quot;</span>&gt;</span> 알림창을 보여줘! <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">function</span> 모달창열어줘() &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">		<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;alertBox&#x27;</span>).<span class="property">style</span>.<span class="property">display</span> = <span class="string">&#x27;block&#x27;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">function</span> 모달창닫아줘() &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">		<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;alertBox&#x27;</span>).<span class="property">style</span>.<span class="property">display</span> = <span class="string">&#x27;none&#x27;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://stellum.github.io/2022/04/18/2022-04-18/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="stellum">
-      <meta itemprop="description" content="All about programming studies including git, html, css, javascript, react, node.js, python, and more.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="스텔라의 개발일지">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/18/2022-04-18/" class="post-title-link" itemprop="url">220418_TIL - HTML Outline 속성</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-04-18 22:13:01" itemprop="dateCreated datePublished" datetime="2022-04-18T22:13:01+09:00">2022-04-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-20 23:07:19" itemprop="dateModified" datetime="2022-04-20T23:07:19+09:00">2022-04-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/TIL-Today-I-Learned/" itemprop="url" rel="index"><span itemprop="name">TIL (Today I Learned)</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li><p>블로그 내에 드디어 카테고리와 태그를 만들었다! 여러 에러 끝에 결국 테마를 바꿔야 했지만… </p>
-</li>
-<li><p>HTML 요소의 가장 바깥 부분을 둘러싸고 있는 Outline 부분의 스타일 속성에 대해서 배웠다.<br>이 속성은 border 속성과는 달리 html 요소의 전체 크기에는 포함되지 않아 width, height 들은 아웃라인의 두께에 전혀 영향을 받지 않는다. </p>
-</li>
-<li><p><code>&lt;h1&gt;, &lt;h6&gt;</code> 태그의 실제 사용 용도와 우선순위에 대해서 배웠다.</p>
-</li>
-</ul>
-<p>웹사이트를 처음 만들때 웹페이지의 어떤 특정 부분이 검색엔진에 잘 노출될지 그 중요도를 고려해 가장 중요한 <code>&lt;h1&gt;</code> 태그 순으로 <code>&lt;h4&gt;</code> 까지 보통 사용한다고 한다. </p>
-<p>이러한 태그 요소들이 html 아웃라인과 연관이 있고 이러한 관점에서 보기 위해 다른 웹사이트들의 구조를 잘 참고해서 안목을 길러봐야 겠다. </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://stellum.github.io/2022/04/17/2022-04-17/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="stellum">
-      <meta itemprop="description" content="All about programming studies including git, html, css, javascript, react, node.js, python, and more.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="스텔라의 개발일지">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/17/2022-04-17/" class="post-title-link" itemprop="url">220417_TIL - Shell Command</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-04-17 20:44:50" itemprop="dateCreated datePublished" datetime="2022-04-17T20:44:50+09:00">2022-04-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-20 23:07:26" itemprop="dateModified" datetime="2022-04-20T23:07:26+09:00">2022-04-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/TIL-Today-I-Learned/" itemprop="url" rel="index"><span itemprop="name">TIL (Today I Learned)</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li><p>터미널에서 Git 을 설치해 hexo 라는 블로그 테마를 다운받아서 첫 깃헙 블로그를 만들었다.<br>이전에는 깃 사용하는게 전혀 이해가 안됬었는데 오늘부로 깃의 원리를 제대로 이해했다.</p>
-</li>
-<li><p>커널과 쉘의 의미와 그 둘의 차이점에 대해 배웠다.<br>그리고 깃의 저장소, 깃을 왜 사용해야하는지, 브랜치의 개념, 깃 플로우에 대해서도 배울 수 있었다.</p>
-</li>
-<li><p>깃헙에서 실제 기업에서 어떻게 팀이 협업하는지 전체적인 workflow 에 대해 배웠다.</p>
-<p>주니어 개발자들은 포크해서 (master 가 아닌) develop 이라는 브랜치 내에서 작업해서 깃에 push 해 올리고,<br>Issues 라는 곳에다 각자의 comment 를 남기고 결국엔 프로젝트 리더가 merge 하는 식!</p>
-</li>
-<li><p>CLI 라는 개념과 Vim editor 에 대해서도 배웠다.<br>iTerm 에서 shell command 플로우가 처음에 익숙하지 않아서 계속 연습했더니 이제 조금 편하게 사용할 수 있게 되었다!</p>
-</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git <span class="built_in">clone</span> &#123;repo url&#125;</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> &#123;repo&#125;</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git add README.md</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git commit</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git push origin main</span></span><br></pre></td></tr></table></figure>
-
-<p>git 사용시 주의해야 할 명령어들:<br><code>$ git add .</code><br><code>$ git commit -m “message”</code> 를 하면 오타났을때 고치기 힘들고 override 할 가능성이 있음.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -888,6 +551,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#01-CSS-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95"><span class="nav-number">1.</span> <span class="nav-text">01. CSS 기본 문법</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-css-%EC%84%A0%EC%96%B8-%EB%B0%A9%EC%8B%9D"><span class="nav-number">2.</span> <span class="nav-text">02. css 선언 방식</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-css-%EC%84%A0%ED%83%9D%EC%9E%90-%EA%B8%B0%EB%B3%B8"><span class="nav-number">3.</span> <span class="nav-text">03. css 선택자_기본</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-css-%EC%84%A0%ED%83%9D%EC%9E%90-%EB%B3%B5%ED%95%A9"><span class="nav-number">4.</span> <span class="nav-text">04. css 선택자_복합</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#05-css-%EA%B0%80%EC%83%81-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%84%A0%ED%83%9D%EC%9E%90-Pseudo-Classes"><span class="nav-number">5.</span> <span class="nav-text">05. css 가상 클래스 선택자 (Pseudo Classes)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#06-css-%EA%B0%80%EC%83%81-%EC%9A%94%EC%86%8C-%EC%84%A0%ED%83%9D%EC%9E%90-Pseudo-Elements"><span class="nav-number">6.</span> <span class="nav-text">06. css 가상 요소 선택자 (Pseudo Elements)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#07-%EC%86%8D%EC%84%B1-%EC%84%A0%ED%83%9D%EC%9E%90-Attribute-ATTR"><span class="nav-number">7.</span> <span class="nav-text">07. 속성 선택자 (Attribute) ATTR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%83%81%EC%86%8D"><span class="nav-number">8.</span> <span class="nav-text">08. 스타일 상속</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#09-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84"><span class="nav-number">9.</span> <span class="nav-text">09. 선택자 우선순위</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-block-inline"><span class="nav-number">10.</span> <span class="nav-text">01. block, inline</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-max-width-max-height"><span class="nav-number">11.</span> <span class="nav-text">02. max-width, max-height</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-min-width-min-height"><span class="nav-number">12.</span> <span class="nav-text">03. min-width, min-height</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-CSS-%EB%8B%A8%EC%9C%84"><span class="nav-number">13.</span> <span class="nav-text">04. CSS 단위</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#05-%EC%99%B8%EB%B6%80-%EC%97%AC%EB%B0%B1-margin"><span class="nav-number">14.</span> <span class="nav-text">05. 외부 여백 (margin)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#06-%EB%82%B4%EB%B6%80-%EC%97%AC%EB%B0%B1-padding"><span class="nav-number">15.</span> <span class="nav-text">06. 내부 여백 (padding)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#07-overflow-%EB%84%98%EC%B9%A8-%EC%A0%9C%EC%96%B4"><span class="nav-number">16.</span> <span class="nav-text">07. overflow 넘침 제어</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-%EC%B6%9C%EB%A0%A5-%ED%8A%B9%EC%84%B1-display"><span class="nav-number">17.</span> <span class="nav-text">08. 출력 특성 display</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#09-position-%EB%B0%B0%EC%B9%98"><span class="nav-number">18.</span> <span class="nav-text">09. position 배치</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-%EC%9A%94%EC%86%8C-%EC%8C%93%EC%9E%84-%EC%88%9C%EC%84%9C-Stack-Order"><span class="nav-number">19.</span> <span class="nav-text">10. 요소 쌓임 순서 Stack Order</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
